@@ -15,7 +15,7 @@
 
 1. Створення та активація віртуального середовища:
    ```bash
-      python3.9 -m venv ../venv
+   python3.9 -m venv ../venv
    source ../venv/bin/activate
    ```   
 3. Встановлення залежностей
@@ -59,6 +59,10 @@
 ## Команди для Stripe:
 
 8. Використання Stripe CLI для прослуховування подій Stripe та перенаправлення їх на локальний сервер:
+   ```bash
+   Stripe login
+   ```
+   
    ```bash
             stripe listen --forward-to localhost:8000/payment/webhook/
    ```

@@ -1,0 +1,20 @@
+Важливі команди
+
+
+1. docker pull rabbitmq - Команда для встановлення (скачування) Docker-контейнера з RabbitMQ
+
+2. docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management - Запускає сервер RabbitMQ з Docker +
+Ця команда повідомляє RabbitMQ, що потрібно працювати на порту 5672, а також запускає користувацький веб-інтерфейс управління на порту 15672
+
+3. celery -A myshop worker -l info - Запускає Celery
+
+4. celery -A myshop flower - Запускає Flower |||||| http://localhost:5555/dashboard
+
+5. docker run -it --rm --name redis -p 6379:6379 redis - Ця команда запускає Docker контейнер Redis з публічного образу Redis, який доступний на Docker Hub
+
+
+КОМАНДИ ДЛЯ Stripe
+
+6. stripe listen --forward-to localhost:8000/payment/webhook/ - Використовує Stripe CLI для прослуховування подій Stripe та перенаправлення їх на вказаний URL локального сервера.
+
+7. stripe login

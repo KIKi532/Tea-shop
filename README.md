@@ -40,20 +40,20 @@
 
 5. Запуск Celery worker:
    ```bash
-      celery -A myshop worker -l info
+   celery -A myshop worker -l info
     ```
    
 7. Запуск Celery Flower для відстеження стану задач:
    (Можна використовувати тільки RabbitMQ)
    ```bash
-       celery -A myshop flower
+   celery -A myshop flower
    ```   
    Flower буде доступний за посиланням http://localhost:5555/dashboard.
 
 ## Запуск Redis для кешування:
 7. Запуск Docker контейнера Redis:
    ```bash
-          docker run -it --rm --name redis -p 6379:6379 redis
+   docker run -it --rm --name redis -p 6379:6379 redis
    ```     
 
 ## Команди для Stripe:

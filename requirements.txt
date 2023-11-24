@@ -10,3 +10,5 @@ redis==4.3.4
 django-rosetta==0.9.8
 django-parler==2.3
 django-localflavor==3.1
+django-debug-toolbar==3.1.0  # Додайте цей рядок
+

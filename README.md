@@ -14,10 +14,11 @@
 
 
 1. Створення та активація віртуального середовища:
+   ```bash
       python3.9 -m venv ../venv
    source ../venv/bin/activate
-
-2. Встановлення залежностей
+   ```   
+3. Встановлення залежностей
         pip install --upgrade pip
     pip install -r requirements.txt
     
